@@ -1,10 +1,163 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Rakesh Mahadasa</title>
-  </head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rakesh Mahadasa</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Add own JavaScript-->
+	<script src="javascripts/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 style="text-align:center;">Anonymous Bank</h1>      
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<table>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr  class="success">
+								<th>Features</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="oAddCustomer" class="success">
+								<td>Add customer</td>
+							</tr>
+							<tr id="oGetCustomer" class="success">
+								<td>Get Details of customer</td>
+							</tr>
+							<tr id="oGetAccount" class="success">
+								<td>Get Specific Account of Customer</td>
+							</tr>
+							<tr id="oAddAccount" class="success">
+								<td>Add Account to customer</td>
+							</tr>
+							<tr id="oGetAllAccounts" class="success">
+								<td>Get All Accounts of Customer</td>
+							</tr>
+							<tr id="oGetTransactionList" class="success">
+								<td>Get All Transactions on a Account</td>
+							</tr>
+						</tbody>
+					</table>
+				</table>
+			</div>
+			<div id="right" class="col-sm-8">
 
-  <body>
-  
-  </body>
+				<!---Form to add a customer-->
+				<div id="addCustomerForm" class="well well-lg">
+					<form  class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-4 control-label">CustomerID</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="CustomerID">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-4 control-label">Customer Name</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="inputPassword3" placeholder="Customer Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-6">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Form to get details of a customer-->
+				<div id="getCustomerForm" class="well well-lg">
+					<form  class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">CustomerID</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="CustomerID">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-6">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>	
+				</div>
+				<!-- Get Account Details Form -->			
+				<div id="getAccountForm" class="well well-lg">
+					<form  class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">AccountID</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="Account ID">
+							</div>
+						</div>						
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-6">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Add Account Form -->
+				<div id="addAccountForm" class="well well-lg">
+					<form  class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">CustomerID</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="CustomerID">
+							</div>
+						</div>						
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-6">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>	
+				</div>
+				<!-- Get all Accounts Form-->
+				<div id="getAllAccounts" class="well well-lg">
+					<form  class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">CustomerID</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="CustomerID">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-6">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Get Transactions form -->
+				<div id="getTransactionList" class="well well-lg">
+					<form  class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">CustomerID</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="inputEmail3" placeholder="CustomerID">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-6">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>	
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
