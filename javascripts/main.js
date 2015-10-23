@@ -11,35 +11,56 @@ $(document).ready(function(){
 
 		$("#oAddCustomer").click(
 				function(){
-					$(".well").fadeOut();
-					$("#addCustomerForm").fadeIn();
+					$(".well").fadeOut();					
+					setTimeout(function(){
+						$('#addCustomerForm').fadeIn();
+					}, 500);
+
 				}
 			);
 
 		$("#oGetCustomer").click(
 				function(){
-					$(".well").fadeOut(function(){$("#getCustomerForm").fadeIn();});
+					$(".well").fadeOut();
+					setTimeout(function(){
+						$('#getCustomerForm').fadeIn();
+					}, 500);
 				}
 			);
 
 		$("#oGetAccount").click(
 				function(){
 					$(".well").fadeOut();
-					$("#getAccountForm").fadeIn();
+					setTimeout(function(){
+						$('#getAccountForm').fadeIn();
+					}, 500);
 				}
 			);
+			
+		$("#oAddAccount").click(
+				function(){
+					$(".well").fadeOut();
+					setTimeout(function(){
+						$('#addAccountForm').fadeIn();
+					}, 500);
+				}
+			);	
 
 		$("#oGetAllAccounts").click(
 				function(){
 					$(".well").fadeOut();
-					$("#getAllAccounts").fadeIn();
+					setTimeout(function(){
+						$('#getAllAccounts').fadeIn();
+					}, 500);
 				}
 			);
 
 		$("#oGetTransactionList").click(
 				function(){
 					$(".well").fadeOut();
-					$("#getTransactionList").fadeIn();
+					setTimeout(function(){
+						$('#getTransactionList').fadeIn();
+					}, 500);
 				}
 			);		
 
